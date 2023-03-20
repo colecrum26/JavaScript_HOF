@@ -45,13 +45,25 @@ const mapUser = users.map((user) => {
 });
 console.log(mapUser);
 
+// additional map
+// const nameAndScores = users.map((user) => {
+//     return [user.name, user.score];
+// });
+// console.log(nameAndScores);
+
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
 
 const activeUser = users.filter((user) => {
-    return user.isActive
+    return user.isActive;
     // if (user.isActive === true){
     //     return { name: user.name };
     // } this creates a filter within a filter
 });
 console.log(activeUser);
+
+// additional filter
+// const isOlder = users.filter((user)=>{
+//     return user.age > 37;
+// });
+// console.log(isOlder);
