@@ -42,7 +42,7 @@ let users = [
 ];
 
 users.forEach((user) => {
-  console.log(user.name);
+//   console.log(user.name);
 });
 
 // Exercise 3 Section
@@ -51,7 +51,7 @@ console.log("EXERCISE 3:\n==========\n");
 const mapUser = users.map((user) => {
   return { name: user.name, score: user.score };
 });
-console.log(mapUser);
+// console.log(mapUser);
 
 // additional map
 // const nameAndScores = users.map((user) => {
@@ -68,10 +68,27 @@ const activeUser = users.filter((user) => {
     //     return { name: user.name };
     // } this creates a filter within a filter
 });
-console.log(activeUser);
+// console.log(activeUser);
 
 // additional filter
 // const isOlder = users.filter((user)=>{
 //     return user.age > 37;
 // });
 // console.log(isOlder);
+
+// Exercise 5 Section
+console.log("EXERCISE 5:\n==========\n");
+
+let scoreDesc = users.sort((user1, user2)=>{
+    return user2.score - user1.score;
+});
+console.log(scoreDesc);
+
+// Exercise 6 Section
+console.log("EXERCISE 6:\n==========\n");
+
+let sumScore = users.reduce((sum, user)=>{
+    return sum + user.score;
+},0);
+console.log(sumScore);
+console.log(sumScore/users.length);
