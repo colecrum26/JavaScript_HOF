@@ -44,3 +44,13 @@ const mapUser = users.map((user) => {
   return { name: user.name, score: user.score };
 });
 console.log(mapUser);
+
+// Exercise 4 Section
+console.log("EXERCISE 4:\n==========\n");
+
+const activeUser = users.filter((user) => {
+    if (user.isActive === true){
+        return { name: user.name };
+    }
+});
+console.log(activeUser);
