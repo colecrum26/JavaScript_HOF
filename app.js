@@ -49,8 +49,9 @@ console.log(mapUser);
 console.log("EXERCISE 4:\n==========\n");
 
 const activeUser = users.filter((user) => {
-    if (user.isActive === true){
-        return { name: user.name };
-    }
+    return user.isActive
+    // if (user.isActive === true){
+    //     return { name: user.name };
+    // } this creates a filter within a filter
 });
 console.log(activeUser);
